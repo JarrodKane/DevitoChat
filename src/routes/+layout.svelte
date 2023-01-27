@@ -1,8 +1,8 @@
 <script lang="ts">
 	import { invalidate } from '$app/navigation';
 	import { onMount } from 'svelte';
+	import '../app.css';
 	import { supabase } from '../lib/supabaseClient';
-	// import './styles.css';
 
 	onMount(() => {
 		const {
@@ -17,6 +17,6 @@
 	});
 </script>
 
-<div class="container" style="padding: 50px 0 100px 0">
+<div class=" bg-indigo-400 w-full h-full">
 	<slot />
 </div>
